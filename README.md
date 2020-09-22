@@ -15,6 +15,7 @@ Install the dependencies...
 * [npm-run-all](https://www.npmjs.com/package/npm-run-all)
 * [firebase](https://www.npmjs.com/package/firebase)
 * [firebase-tool](https://www.npmjs.com/package/firebase-tools)
+
 then..
 ```bash
 npm install
