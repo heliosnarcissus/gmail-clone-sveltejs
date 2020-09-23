@@ -19,10 +19,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install RoutifyJS
         run: npm install --save-dev @sveltech/routify
+      - name: Install NPM
+        run: npm install
       # Runs a set of commands using the runners shell
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy
+          args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
