@@ -14,7 +14,7 @@ jobs:
       - name: Install NPM
         run: npm install
       - name: use firebase alias
-        run: firebase use staging
+        run: firebase use rrenacia-7c163
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
