@@ -13,7 +13,7 @@ module.exports = {
       },
       height: theme => ({
         "screen/2": "50vh",
-        "48%": "48vh",
+        "45%": "45vh",
       }),
     }
   },

@@ -3,7 +3,13 @@ import 'firebase/firestore'
 import "firebase/auth";
 
   var firebaseConfig = {
-     //COPY PASTE YOUR CONFIG FROM FIREBASE CONSOLE, FOR WEB.
+    apiKey: "AIzaSyCuhBxrWU0hjMEVbKWC4_MfxnFxzfjjgKI",
+    authDomain: "rrenacia-7c163.firebaseapp.com",
+    databaseURL: "https://rrenacia-7c163.firebaseio.com",
+    projectId: "rrenacia-7c163",
+    storageBucket: "rrenacia-7c163.appspot.com",
+    messagingSenderId: "69786215764",
+    appId: "1:69786215764:web:413b16d21a241aaf6814c1"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);

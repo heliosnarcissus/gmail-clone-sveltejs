@@ -20,11 +20,11 @@
 
 </style>
 <!--modal black bacground-->
-<section class=" fixed inset-0 h-full z-40 justify-center  bg-black bg-opacity-50 ">
+<body class="z-50 flex justify-center" >
 
     <!--modal main body-->
     <div  transition:fade={{ duration: 300}}
-        class=" flex flex-col bg-gray-900 rounded mt-24 pb-2 h-48% max-w-xs mx-auto justify-between">
+        class="fixed flex flex-col bg-gray-900 rounded mt-24 pb-2 h-45% w-10/12 justify-between">
         <div>
             <!--brand name-->
             <div class="flex justify-center items-center py-3 ">
@@ -47,12 +47,12 @@
                 </div>  
             </section>
             <hr class="mb-3" />
-            <section class="flex items-center mr-2 px-2 mx-auto mb-32">                     
+            <section class="flex items-center mr-2 px-2 mx-auto mb-24">                     
                <!--left empty for now, .. will think what to place here.-->
             </section>   
 
-            <section class="flex justify-center items-center">     
-                <button class="focus:outline-none border-gray-100 px-4  border rounded-full text-gray-100 border-white py-1">
+            <section class="flex justify-center items-center py-4">     
+                <button class="focus:outline-none border-gray-100 px-4  border rounded-full text-gray-100 border-white">
                     <span>Manage your account </span>
                 </button>
             </section>
@@ -70,4 +70,4 @@
         </section>   
     </div> 
 
-</section> 
+</body> 

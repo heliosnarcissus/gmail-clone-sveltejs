@@ -12,14 +12,32 @@
 </script>
 
 <style>
-
+    .stick-out-bar::before, 
+    .stick-out-bar::after {
+      position: absolute;
+      height: 0;
+      width: 1.125rem;
+      content: '';
+    }
+    .stick-out-bar::before {
+      top: -0.5rem;
+      border-bottom: 1.125rem solid white;
+      border-right: 1.125rem solid transparent;
+   
+    }
+    .stick-out-bar::after {
+      bottom: -0.9675rem;
+      border-top: 1.125rem solid white;
+      border-right: 1.125rem solid transparent;
+    
+    }
 </style>
 
 <body class = "z-50">
 
     <section 
        transition:fly="{{ x: -300, duration: 400 }}"
-        class="h-full w-10/12 bg-gray-900 fixed top-0 left-0 border-t border-r-2 border-b border-gray-800">
+        class="fixed h-full w-10/12 bg-gray-900  top-0 left-0 border-t  border-b border-gray-800">
           <!--LOGO SECTION-->
           <section>
               <span class="flex w-full items-center border-b border-gray-700 h-24">
@@ -60,6 +78,12 @@
                 </span>     
           </section>
 
+          <!--div class="relative bg-gray-900 h-20 w-5 flex items-center rounded-tr-lg rounded-br-lg stick-out-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 -ml-1 text-gray-300">
+              <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+          </div-->
+
           <div class="fixed flex flex-col bottom-0 w-10/12">
             <button
               class="flex items-center p-4 text-white bg-blue-500 hover:bg-blue-600
@@ -84,5 +108,10 @@
                 <br />
               </p></a>
           </div>  
-        </section>
+          
+      </section>
+       
+      
+         
 </body>
+

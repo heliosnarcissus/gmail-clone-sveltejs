@@ -14,7 +14,7 @@
     import { onMount } from 'svelte';
     
     let showDrawer = false;
-    let showProfile = false;
+    let showProfile = true;
 
     let userObject = {};
 
@@ -72,6 +72,7 @@
 	 }
 
     function hideDrawer(){
+        console.log('hiding drawer..')
         showDrawer = false;
         enableScroll();
     }
@@ -129,11 +130,16 @@ on:keydown={e => {
 }}/>
 
 <body >
-    {#if showProfile}         
-            <ProfileModal on:hideProfile={hideProfile} on:logoutUser={signOutUser}/>          
-    {/if}
+   
 
     <div class="flex flex-col justify-center bg-gray-900 min-w-full px-4"> 
+        {#if showProfile}       
+        <button on:click={hideProfile}  transition:fade="{{ x: -300, duration: 400 }}">
+            <div class="z-40 fixed inset-0 h-full min-w-screen bg-black bg-opacity-90"> </div>             
+        </button>  
+            <ProfileModal on:hideProfile={hideProfile} on:logoutUser={signOutUser}/>          
+        {/if}
+
         <!--DRAWER/SIDE PANEL-->
         {#if showDrawer}    
             <button on:click={hideDrawer}  transition:fade="{{ x: -300, duration: 400 }}">

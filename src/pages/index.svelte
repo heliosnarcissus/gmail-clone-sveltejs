@@ -24,7 +24,8 @@
 		//const res = await fetch(`https://jsonplaceholder.typicode.com/photos?_limit=20`);
 		//photos = await res.json();
 		console.log("---------- Index.svelte ----------");
-		checkAuthState();
+		//checkAuthState();
+		$goto('../Admin')
 	});
 
 	function checkAuthState(){
