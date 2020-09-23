@@ -1,3 +1,5 @@
+Status: Work in Progress.
+
 This application is powered by:
 
 * [SvelteJS](https://github.com/sveltejs/svelte)
