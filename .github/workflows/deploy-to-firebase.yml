@@ -17,8 +17,8 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       # Runs a single command using the runners shell
-      - name: Install Dependencies
-        run: npm install
+      - name: Install RoutifyJS
+        run: npm install --save-dev @sveltech/routify
       # Runs a set of commands using the runners shell
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
