@@ -1,4 +1,4 @@
-**Status**: Work in Progress.
+**Status**: Work in Progress. This is the Front-End aspect of the Gmail Clone project which will be combined with [java-gmail-api](https://github.com/heliosnarcissus/java-gmail-api) which manages the backend part.
 
 This application is powered by:
 
